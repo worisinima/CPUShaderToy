@@ -30,3 +30,13 @@
 *.exe
 *.out
 *.app
+
+.vs/
+x64/
+/Debug/
+/CPUShaderToy/x64/
+/CPUShaderToy/Intermediate/
+/CPUShaderToy/Extra/
+/Build/x64/
+/.vs/
+/Picasso/Debug/
