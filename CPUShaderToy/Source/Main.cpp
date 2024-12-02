@@ -14,6 +14,12 @@
 #include <direct.h>
 #include "shlobj.h" 
 
+//CImage
+#include "CImage/CImg.h"
+using namespace cimg_library;
+using namespace std;
+using namespace Microsoft::WRL;
+
 using namespace std;
 
 namespace FileHelper
@@ -442,15 +448,6 @@ int main()
 
 	const int SizeX = 256;
 	const int SizeY = 256;
-	FImage* OutputImage = new FImage(SizeX, SizeY, "OutputImage");
-	
-	for (int y = 0; y < SizeY; y++)
-	{
-		for (int x = 0; x < SizeX; x++)
-		{
-			OutputImage->SetPixleColor(128, FVector2D(x, y));
-		}
-	}
 
 	Rect2D* A = new Rect2D(FVector2D(5, 5), FVector2D(10, 10), FColor(255, 0, 0));
 	Rect2D* B = new Rect2D(FVector2D(15, 15), FVector2D(2, 2), FColor(255, 0, 0));
@@ -464,9 +461,18 @@ int main()
 		cout << endl << "不相交" << endl;
 	}
 
-	OutputImage->SaveImageToDesk();
-	delete OutputImage;
-	OutputImage = nullptr;
+	//Save the texture
+	CImg<uint8_t> DestSaveTexture(SizeX, SizeY, 1, 3);
+	cimg_forXY(DestSaveTexture, x, y)
+	{
+		FColor NewColor;
+		DestSaveTexture(x, y, 0) = 255;
+		DestSaveTexture(x, y, 1) = 0;
+		DestSaveTexture(x, y, 2) = 0;
+	}
+	//DestSaveTexture.display("Output");
+	const string& Path = FileHelper::GetDesktopPath();
+	DestSaveTexture.save((Path + "\\Text.bmp").c_str());
 
 	return 0;
 }

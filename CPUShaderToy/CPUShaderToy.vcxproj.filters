@@ -1,22 +1,69 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Source Files">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    <Filter Include="Source">
+      <UniqueIdentifier>{3c10796b-b4c6-4e86-8cfc-b249933cd948}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    <Filter Include="Source\CImage">
+      <UniqueIdentifier>{4118763d-138c-4342-95e7-a489e4346703}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    <Filter Include="Source\CImage\plugins">
+      <UniqueIdentifier>{de0f2a72-7048-40b4-b04d-135f3890b034}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Main.cpp">
-      <Filter>Source Files</Filter>
+    <ClInclude Include="Source\CImage\CImg.h">
+      <Filter>Source\CImage</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CImage\plugins\add_fileformat.h">
+      <Filter>Source\CImage\plugins</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CImage\plugins\bayer.h">
+      <Filter>Source\CImage\plugins</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CImage\plugins\chlpca.h">
+      <Filter>Source\CImage\plugins</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CImage\plugins\cvMat.h">
+      <Filter>Source\CImage\plugins</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CImage\plugins\draw_gradient.h">
+      <Filter>Source\CImage\plugins</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CImage\plugins\inpaint.h">
+      <Filter>Source\CImage\plugins</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CImage\plugins\ipl.h">
+      <Filter>Source\CImage\plugins</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CImage\plugins\ipl_alt.h">
+      <Filter>Source\CImage\plugins</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CImage\plugins\jpeg_buffer.h">
+      <Filter>Source\CImage\plugins</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CImage\plugins\loop_macros.h">
+      <Filter>Source\CImage\plugins</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CImage\plugins\matlab.h">
+      <Filter>Source\CImage\plugins</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CImage\plugins\nlmeans.h">
+      <Filter>Source\CImage\plugins</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CImage\plugins\skeleton.h">
+      <Filter>Source\CImage\plugins</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CImage\plugins\tiff_stream.h">
+      <Filter>Source\CImage\plugins</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CImage\plugins\tinymatwriter.h">
+      <Filter>Source\CImage\plugins</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Main.cpp">
+      <Filter>Source</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

@@ -127,7 +127,25 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Main.cpp" />
+    <ClInclude Include="Source\CImage\CImg.h" />
+    <ClInclude Include="Source\CImage\plugins\add_fileformat.h" />
+    <ClInclude Include="Source\CImage\plugins\bayer.h" />
+    <ClInclude Include="Source\CImage\plugins\chlpca.h" />
+    <ClInclude Include="Source\CImage\plugins\cvMat.h" />
+    <ClInclude Include="Source\CImage\plugins\draw_gradient.h" />
+    <ClInclude Include="Source\CImage\plugins\inpaint.h" />
+    <ClInclude Include="Source\CImage\plugins\ipl.h" />
+    <ClInclude Include="Source\CImage\plugins\ipl_alt.h" />
+    <ClInclude Include="Source\CImage\plugins\jpeg_buffer.h" />
+    <ClInclude Include="Source\CImage\plugins\loop_macros.h" />
+    <ClInclude Include="Source\CImage\plugins\matlab.h" />
+    <ClInclude Include="Source\CImage\plugins\nlmeans.h" />
+    <ClInclude Include="Source\CImage\plugins\skeleton.h" />
+    <ClInclude Include="Source\CImage\plugins\tiff_stream.h" />
+    <ClInclude Include="Source\CImage\plugins\tinymatwriter.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
