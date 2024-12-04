@@ -60,6 +60,15 @@
     <ClInclude Include="Source\CImage\plugins\tinymatwriter.h">
       <Filter>Source\CImage\plugins</Filter>
     </ClInclude>
+    <ClInclude Include="Source\QuadTree.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Rect.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Common.h">
+      <Filter>Source</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source\Main.cpp">

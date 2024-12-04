@@ -143,6 +143,9 @@
     <ClInclude Include="Source\CImage\plugins\skeleton.h" />
     <ClInclude Include="Source\CImage\plugins\tiff_stream.h" />
     <ClInclude Include="Source\CImage\plugins\tinymatwriter.h" />
+    <ClInclude Include="Source\Common.h" />
+    <ClInclude Include="Source\QuadTree.h" />
+    <ClInclude Include="Source\Rect.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source\Main.cpp" />
